@@ -18,6 +18,7 @@ jobs:
       with:
         name: reports
         path: reports
+    - run: ls -a
 
   report:
     if: always()
