@@ -18,7 +18,9 @@ jobs:
       with:
         name: reports
         path: reports
-    - run: ls -a
+    - name: Check directory
+      if: always()
+      run: ls -a
 
   report:
     if: always()
